@@ -19,8 +19,13 @@ root = './templates'
 
 for dirpath, subdirs, filenames in os.walk(root):
     for name in filenames:
+        if name.startswith('.'):
+            continue # Put this in for bloody .DS_Store files.
+                     # TODO: Think about this.
+
         # get template and render
         template_path = os.path.join(dirpath, name)
+        print "Loading template at: %s" % template_path
         t = get_template(template_path)
         html = t.render(Context({})) # Empty context is required.
 
@@ -35,6 +40,3 @@ for dirpath, subdirs, filenames in os.walk(root):
         write_file.close()
 
         print "Wrote: %s" % write_path
-
-
-
