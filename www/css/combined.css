@@ -1,6 +1,6 @@
 /* The h5bp reset/normalise file. */
-@import style.css;
+@import url("style.css");
 
 
 /* Our SASS generated stylesheet */
-@import screen.css;
+@import url("screen.css");
