@@ -1,6 +1,8 @@
 /* The h5bp reset/normalise file. */
-@import url("style.css");
+/* @import url("style.css"); */
 
+@import url("../bootstrap.min.css");
+@import url("../bootstrap-responsive.min.css");
 
 /* Our SASS generated stylesheet */
 @import url("screen.css");
