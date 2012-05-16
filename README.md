@@ -2,9 +2,6 @@
 
 Port of HTML5 Boilerplate to Django templates, plus static site generator.
 
-**Current status**: in daily-use/development but **VERY** barebones.
-(Let me know if you find it useful.)
-
 ## Features ##
 
 * HTML5 Bolierplate (+ build script)
